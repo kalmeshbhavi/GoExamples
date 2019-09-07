@@ -1,0 +1,12 @@
+apiVersion: v1
+clusters: []
+contexts:
+- context:
+    cluster: gke_mercari-jp-citadel-dev_asia-northeast1-b_citadel-dev
+    namespace: kouzoh-photo-jp-dev
+    user: gke_mercari-jp-citadel-dev_asia-northeast1-b_citadel-dev
+  name: photo-dev
+current-context: ""
+kind: Config
+preferences: {}
+users: []

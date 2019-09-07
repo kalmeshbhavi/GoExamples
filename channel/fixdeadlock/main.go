@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func greet(c chan string) {
-	fmt.Println(<- c)
-	fmt.Println(<- c)
+	fmt.Println(<-c)
+	fmt.Println(<-c)
 }
 
 func main() {
@@ -13,10 +13,11 @@ func main() {
 	c := make(chan string, 1)
 
 	go greet(c)
-	c <- "Kalmesh"
+	// c <- "Kalmesh"
 
-	close(c)
+	// close(c)
 	c <- "test"
+	close(c)
 
 	fmt.Println("main() stopped")
 }

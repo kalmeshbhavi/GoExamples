@@ -9,4 +9,7 @@ func main() {
 	c := make(chan string)
 	c <- "Kalmesh"
 	fmt.Println("main() stopped")
+	close(c)
+	fmt.Println(<-c)
+
 }

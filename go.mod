@@ -1,6 +1,8 @@
 module github.com/kalmeshbhavi/GoExamples
 
 require (
-	golang.org/x/sync v0.0.0-20181221193216-37e7f081c4d4
+	github.com/reactivex/rxgo v1.0.0
+	github.com/stretchr/testify v1.3.0 // indirect
+	golang.org/x/text v0.3.2
 	gopkg.in/guregu/null.v3 v3.4.0
 )
